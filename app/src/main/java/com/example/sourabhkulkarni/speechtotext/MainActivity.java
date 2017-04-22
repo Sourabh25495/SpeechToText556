@@ -43,13 +43,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
 
     }
-
+    //jump to next activity on click
     public void onClick(View v) {
-        switch (v.getId()) {
-            case R.id.button1:
+
                 startActivity(new Intent(this, TextToSpeecch.class));
 
-        }
+
     }
     // Showing google speech input dialog
 
