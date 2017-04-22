@@ -28,7 +28,7 @@
         android:orientation="vertical" >
 
 
-        <TextView
+        <Button
             android:clickable="true"
             android:gravity="center"
             android:padding="16dp"
