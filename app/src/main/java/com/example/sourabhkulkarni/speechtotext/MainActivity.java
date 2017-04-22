@@ -6,16 +6,21 @@ import android.speech.RecognizerIntent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
 import java.util.ArrayList;
 import java.util.Locale;
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
 
     private TextView voiceInput;
     private TextView speakButton;
+    private Button ChangeActivity;
     private final int REQ_CODE_SPEECH_INPUT = 100;
+
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,6 +30,7 @@ public class MainActivity extends AppCompatActivity {
         voiceInput = (TextView) findViewById(R.id.voiceInput);
         speakButton = (TextView) findViewById(R.id.btnSpeak);
 
+
         speakButton.setOnClickListener(new View.OnClickListener() {
 
             @Override
@@ -32,7 +38,18 @@ public class MainActivity extends AppCompatActivity {
                 askSpeechInput();
             }
         });
+        ChangeActivity=(Button)findViewById(R.id.button1) ;
 
+
+
+    }
+
+    public void onClick(View v) {
+        switch (v.getId()) {
+            case R.id.button1:
+                startActivity(new Intent(this, TextToSpeecch.class));
+
+        }
     }
     // Showing google speech input dialog
 
@@ -49,6 +66,8 @@ public class MainActivity extends AppCompatActivity {
 
         }
     }
+
+
 
 // Receiving speech input
 
@@ -71,12 +90,15 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-
-
-
-
-
     }
+
+
+
+
+
+
+
+
 
 
 
