@@ -18,6 +18,7 @@ public class TextToSpeecch extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_text_to_speecch);
+        
         ed1=(EditText)findViewById(R.id.editText);
         b2=(Button)findViewById(R.id.button2);
 

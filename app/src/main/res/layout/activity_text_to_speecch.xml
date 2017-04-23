@@ -2,12 +2,14 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
     android:layout_height="match_parent"
-
+    android:background="@drawable/statue_liberty1a"
     tools:context=".MainActivity"
     android:transitionGroup="true">
 
-    <TextView android:text="Voice Interfacing" android:layout_width="wrap_content"
+    <TextView android:text="556 Project Stage 2"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
         android:id="@+id/textview"
         android:textSize="35dp"
         android:textStyle="bold"
@@ -17,28 +19,20 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="556 Project"
+        android:text="Text to Speech"
         android:id="@+id/textView"
         android:layout_below="@+id/textview"
         android:layout_centerHorizontal="true"
         android:textColor="#123"
         android:textSize="35dp" />
 
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/imageView"
 
-        android:layout_below="@+id/textView"
-        android:layout_centerHorizontal="true"
-        android:theme="@style/Base.TextAppearance.AppCompat" />
 
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/editText"
-        android:layout_below="@+id/imageView"
-        android:layout_marginTop="46dp"
+        android:layout_marginTop="146dp"
         android:hint="Enter Text"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
@@ -51,6 +45,7 @@
         android:id="@+id/button2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimary"
         android:text="Text to Speech"
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true" />
