@@ -17,7 +17,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
         android:text="556 Project- Stage 1"
-        android:textSize="26sp"
+        android:textSize="35sp"
         android:textColor="#000000"
         android:textStyle="bold" />
 
@@ -29,7 +29,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="50dp"
         android:text="Speech To Text"
-        android:textSize="26sp"
+        android:textSize="35sp"
         android:textColor="#000000"
         android:textStyle="bold" />
 
@@ -41,7 +41,7 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="100dp"
-        android:textSize="26sp"
+        android:textSize="35sp"
         android:textColor="#000000"
         android:textStyle="bold" />
     <LinearLayout
